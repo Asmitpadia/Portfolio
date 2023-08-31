@@ -1,0 +1,148 @@
+ body{
+    margin:0;
+    padding:0;
+    color:white;
+    overflow-Y: scroll;
+    font-family: 'system-ui';
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+header {
+    width:100%;
+    height:20%;
+}
+#nav{
+    z-index:20;
+    position: fixed;
+    gap:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#29293d;
+    height:10vh;
+    width:100%;
+}
+#heading{
+    position: absolute;
+    left:0;
+    font-weight: bolder;
+    font-family: system-ui;
+}
+#main-Heading{
+    display: flex;
+    align-items: center;
+    font-size:30px;
+}
+#content ul{
+    display:flex;
+    align-self: center;
+    padding-left:60vw;
+    gap:70px;
+    list-style: none;
+}
+#content ul li:hover{
+    cursor:pointer;
+    text-decoration: underline;
+}
+#animation{
+    height:59px;
+    overflow: hidden;
+    position: relative;
+    top:100px;
+    font-family: 'system-ui';
+    font-weight: bolder;
+}
+#animation ul{
+    list-style:none;
+    position:relative;
+    left:300px;
+    color:purple;
+    font-size:50px;
+    left:240px;
+    animation: animate 40s steps(1) infinite 0s;
+    animation: animate 40s steps(1) infinite 0.1s;
+}
+@keyframes animate {
+     0%{
+        bottom:25.2vh;
+     }
+     20% {
+        transform: translateY(-70px);
+     }
+     40% {
+        transform: translateY(67px);
+     }
+     
+}
+#animation span{
+    position:relative;
+    bottom:10px;
+    font-size:50px;
+}
+#animation #typewriter{
+    background-color: #00004d;
+    width:120px;
+    height:12px;
+    border-left:4px solid purple;
+    color:#00004d;
+    position: relative;
+    bottom:373px;
+    left:40vw;
+}
+#typewriter{
+    animation: typing 2s linear infinite;
+    animation-delay: 1ms;
+}
+@keyframes typing {
+     0%{
+       left:290px;
+     }
+     100% {
+     }
+}
+#designs pre{
+    position:absolute;
+    left:60px;
+    top:300px;
+    font-family:'Courier New';
+    font-weight:bold;
+    font-size:100px;
+}
+#Intro{
+    padding:30px;
+}
+#Intro p{
+    font-size:30px;
+}
+#left-part{
+    position:absolute;
+    top:120vh;
+    height:670px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+#opts{
+    display:flex;
+    cursor:pointer;
+}
+#opts h3{
+    position:relative;
+    right:480px;
+    padding:20px;
+}
+.active{
+    color:red;
+    text-decoration: underline;
+}
+.activ{
+    text-decoration: underline;
+}
+#change{
+    font-weight:bold;
+    position: absolute;
+    top:8vh;
+    left:39px;
+}
